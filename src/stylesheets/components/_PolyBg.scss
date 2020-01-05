@@ -1,0 +1,35 @@
+.poly-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  background-image: linear-gradient(
+    0deg,
+    rgb(147, 223, 255) 0%,
+    rgb(255, 255, 255) 75%
+  );
+  .left-triangle,
+  .right-triangle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #9bd6f1;
+  }
+  .middle-triangle {
+    position: absolute;
+    opacity: 0.7;
+    background-color: #9bd6f1;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 30%, 0% 100%, 100% 100%);
+  }
+  .left-triangle {
+    clip-path: polygon(0 20%, 0% 100%, 35% 100%);
+  }
+  .right-triangle {
+    clip-path: polygon(100% 20%, 100% 100%, 65% 100%);
+  }
+}
