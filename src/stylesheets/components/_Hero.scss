@@ -1,3 +1,17 @@
 .hero {
-  padding: 20px;
+  padding: 65px;
+  height: calc(100vh - 130px);
+  text-align: center;
+  .main-logo {
+    width: 450px;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    img {
+      height: 70px;
+    }
+  }
 }
