@@ -8,11 +8,13 @@ import ResetLogo from "./../assets/images/reset-logo.svg";
 function Hero() {
   return (
     <div className="hero">
-      <img className="main-logo" src={BitadLogo} alt="Bitad Logo" />
-      <LineEndedWithCircles
-        topText="28.03.2020"
-        bottomText="Rejestracja już wkrótce"
-      />
+      <div className="middle">
+        <img src={BitadLogo} alt="Bitad Logo" />
+        <LineEndedWithCircles
+          topText="28.03.2020"
+          bottomText="Rejestracja już wkrótce"
+        />
+      </div>
       <div className="bottom">
         <img src={AthLogo} alt="Ath Logo" />
         <img src={ResetLogo} alt="Reset Logo" />
