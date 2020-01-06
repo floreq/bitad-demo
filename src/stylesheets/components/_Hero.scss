@@ -1,5 +1,4 @@
-$margin: 65px;
-
+$margin: 60px;
 .hero {
   display: flex;
   flex-direction: column;
@@ -7,27 +6,37 @@ $margin: 65px;
   padding: $margin;
   min-height: calc(100vh - #{$margin * 2});
   text-align: center;
-  background-image: linear-gradient(
-    0deg,
-    rgb(147, 223, 255) 0%,
-    rgb(255, 255, 255) 90%
-  );
+  background-image: linear-gradient(0deg, #6ed4fb 0%, #fff 70%);
   .middle,
   .bottom {
     z-index: 1;
   }
   .middle {
     align-self: center;
-    width: 450px;
+    width: 412px;
+  }
+  @media screen and (max-width: 600px) {
+    .middle {
+      width: 68.5vw;
+    }
   }
   .bottom {
     display: flex;
     justify-content: space-between;
+    margin-top: $margin;
     position: relative;
     img {
-      height: 70px;
+      height: 64px;
+    }
+    @media screen and (max-width: 600px) {
+      & {
+        display: grid;
+        justify-content: center;
+        row-gap: $margin/2;
+      }
     }
   }
+  $opacity: 0.1;
   .poly-bg-wrapper {
     padding-top: $margin;
     margin-bottom: -$margin;
@@ -36,8 +45,8 @@ $margin: 65px;
       width: calc(100% + #{$margin * 2});
       height: calc(100vh - #{$margin * 2});
       margin-top: calc(-100vh + #{$margin * 2});
-      opacity: 0.5;
-      background-color: #9bd6f1;
+      opacity: $opacity;
+      background-color: $main-blue;
       clip-path: polygon(
         100% 100%,
         100% calc(70% - 30vw),
@@ -48,8 +57,8 @@ $margin: 65px;
       );
     }
     .middle-triangle {
-      opacity: 0.7;
-      background-color: #9bd6f1;
+      opacity: $opacity;
+      background-color: $main-blue;
       margin-left: -$margin;
       margin-right: -$margin;
       width: calc(100% + #{$margin * 2});

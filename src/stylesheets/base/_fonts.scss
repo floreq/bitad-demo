@@ -1,9 +1,42 @@
+$root_font-size: 18px;
+
 @font-face {
   font-family: "PT Sans";
   src: url("./../../assets/fonts/PTS55F.ttf");
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "PT Sans";
+  src: url("./../../assets/fonts/PTS75F.ttf");
+  font-weight: bold;
+}
+
 html {
   font-family: "PT Sans";
+  font-size: $root_font-size;
+  color: $main-black;
+}
+
+h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 72px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  margin-bottom: 0;
+  margin-top: 54px;
+  font-size: 36px;
+  letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 12vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
 }

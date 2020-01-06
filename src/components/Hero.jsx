@@ -10,7 +10,7 @@ function Hero() {
       <div className="middle">
         <img src={BitadLogo} alt="Bitad Logo" />
         <LineEndedWithCircles topText="10 EDYCJA" bottomText="20.03" />
-        <h1>Rejestracja już wkrótce</h1>
+        <h2>Rejestracja już wkrótce</h2>
       </div>
       <div>
         <div className="bottom">
