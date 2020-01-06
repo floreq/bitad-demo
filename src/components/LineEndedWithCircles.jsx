@@ -9,7 +9,7 @@ function LineEndedWithCircles(props) {
         <div className="line"></div>
         <div className="circle"></div>
       </div>
-      <h2>{props.bottomText}</h2>
+      <h1>{props.bottomText}</h1>
     </div>
   );
 }
