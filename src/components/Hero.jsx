@@ -3,6 +3,8 @@ import LineEndedWithCircles from "./LineEndedWithCircles";
 import AthLogo from "./../assets/images/ath-logo.svg";
 import BitadLogo from "./../assets/images/bitad-logo-2020.svg";
 import ResetLogo from "./../assets/images/reset-logo.svg";
+import PolyBg from "./../assets/images/poly-bg.svg";
+// import { ReactComponent as PolyBg } from "./../assets/images/poly-bg.svg";
 
 function Hero() {
   return (
@@ -17,10 +19,7 @@ function Hero() {
           <img src={AthLogo} alt="Ath Logo" />
           <img src={ResetLogo} alt="Reset Logo" />
         </div>
-        <div className="poly-bg-wrapper">
-          <div className="middle-triangle"></div>
-          <div className="congruent-triangles"></div>
-        </div>
+        <img className="poly-bg" src={PolyBg} alt="Poly Bg" />
       </div>
     </div>
   );
