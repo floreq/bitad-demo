@@ -1,0 +1,33 @@
+$border: 9px solid $main-blue;
+$circle-size: 17px;
+.line-component {
+  margin-top: $margin;
+  text-align: center;
+  .line-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle {
+      width: $circle-size;
+      height: $circle-size;
+      border: $border;
+      border-radius: 50%;
+    }
+    .line {
+      width: calc(100% - (#{$circle-size}* 2));
+      border-top: $border;
+    }
+    @media screen and (max-width: 600px) {
+      $border-width: 1.5vw;
+      $circle-size: 3.12vw;
+      .circle {
+        border-width: $border-width;
+        width: $circle-size;
+        height: $circle-size;
+      }
+      .line {
+        border-width: $border-width;
+      }
+    }
+  }
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import TestComponent from "./components/TestComponent";
 import "./stylesheets/main.scss";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div>
-      <TestComponent />
-    </div>
+    <React.Fragment>
+      <Hero />
+    </React.Fragment>
   );
 }
 
